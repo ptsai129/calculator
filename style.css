@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #025a86, #be97b5);
+}
+
+.calculator {
+  width: 320px;
+  height: 530px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  margin: 20px auto;
+  background-color: #eaedef;
+}
+/* 計算機計算顯示區塊 */
+.calculator-display {
+  width: 100%;
+  height: 130px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: #0e0327b6;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.historical-record {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 24px;
+}
+
+.current-input {
+  color: white;
+  font-size: 40px;
+}
+
+/* 計算機按鈕區塊 */
+.calculator-keys {
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calculator-keys button {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  border: 3px solid #0e0327b6;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* 點擊按鈕瞬間字會放大 */
+.calculator-keys button:active {
+  font-size: 24px;
+}
+/* 點擊按鈕瞬間背景色會變 */
+.calculator-keys button:hover {
+  background-color: #430c6e71;
+}
+
+.calculator-keys button:nth-child(1) {
+  width: 90px;
+  font-size: 20px;
+}
+.calculator-keys button:nth-child(2) {
+  width: 90px;
+  font-size: 20px;
+}
